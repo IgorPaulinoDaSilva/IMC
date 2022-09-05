@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMC"
+            android:textSize="50sp"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informe seu peso (Kg)"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/peso"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:maxLength="6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informe sua altura (Metro e Cm)"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"/>/>
+
+        <EditText
+            android:id="@+id/altura"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:maxLength="4" />
+
+        <Button
+            android:id="@+id/botao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Calcular"
+            />
+
+        <TextView
+            android:id="@+id/resultadoCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/situacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Situação"
+            android:layout_marginTop="15dp"
+            android:textSize="30sp"
+            android:textColor="@color/red"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
